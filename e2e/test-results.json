@@ -1,0 +1,87 @@
+{
+  "config": {
+    "configFile": "/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/playwright.config.ts",
+    "rootDir": "/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "e2e/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://localhost:5173",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: Playwright Test did not expect test.beforeEach() to be called here.\nMost common reasons include:\n- You are calling test.beforeEach() in a configuration file.\n- You are calling test.beforeEach() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.",
+      "stack": "Error: Playwright Test did not expect test.beforeEach() to be called here.\nMost common reasons include:\n- You are calling test.beforeEach() in a configuration file.\n- You are calling test.beforeEach() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n    at TestTypeImpl._currentSuite (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/node_modules/playwright/lib/common/testType.js:75:13)\n    at TestTypeImpl._hook (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/node_modules/playwright/lib/common/testType.js:160:24)\n    at Function.beforeEach (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/node_modules/playwright/lib/transform/transform.js:282:12)\n    at /tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/e2e/app.spec.ts:4:6",
+      "location": {
+        "file": "/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/e2e/app.spec.ts",
+        "column": 6,
+        "line": 4
+      },
+      "snippet": "\u001b[90m   at \u001b[39mapp.spec.ts:4\n\n  2 | import { captureScreenshot, assertNoConsoleErrors } from './helpers'\n  3 |\n> 4 | test.beforeEach(async ({ page }) => {\n    |      ^\n  5 |   // Clear localStorage before each test for a clean slate\n  6 |   await page.goto('/')\n  7 |   await page.evaluate(() => localStorage.clear())"
+    },
+    {
+      "message": "Error: No tests found",
+      "stack": "Error: No tests found"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-02-27T17:39:03.534Z",
+    "duration": 956.9850000000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
