@@ -63,7 +63,7 @@
   "errors": [
     {
       "message": "Error: Playwright Test did not expect test.beforeEach() to be called here.\nMost common reasons include:\n- You are calling test.beforeEach() in a configuration file.\n- You are calling test.beforeEach() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.",
-      "stack": "Error: Playwright Test did not expect test.beforeEach() to be called here.\nMost common reasons include:\n- You are calling test.beforeEach() in a configuration file.\n- You are calling test.beforeEach() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n    at TestTypeImpl._currentSuite (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/node_modules/playwright/lib/common/testType.js:75:13)\n    at TestTypeImpl._hook (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/node_modules/playwright/lib/common/testType.js:160:24)\n    at Function.beforeEach (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/node_modules/playwright/lib/transform/transform.js:282:12)\n    at Object.<anonymous> (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/e2e/app.spec.ts:4:6)",
+      "stack": "Error: Playwright Test did not expect test.beforeEach() to be called here.\nMost common reasons include:\n- You are calling test.beforeEach() in a configuration file.\n- You are calling test.beforeEach() in a file that is imported by the configuration file.\n- You have two different versions of @playwright/test. This usually happens\n  when one of the dependencies in your package.json depends on @playwright/test.\n    at TestTypeImpl._currentSuite (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/node_modules/playwright/lib/common/testType.js:75:13)\n    at TestTypeImpl._hook (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/node_modules/playwright/lib/common/testType.js:160:24)\n    at Function.beforeEach (/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/node_modules/playwright/lib/transform/transform.js:282:12)\n    at /tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/e2e/app.spec.ts:4:6",
       "location": {
         "file": "/tmp/work/abd1a597-5e0e-4a33-84b3-acc986874e23/e2e/app.spec.ts",
         "column": 6,
@@ -77,8 +77,8 @@
     }
   ],
   "stats": {
-    "startTime": "2026-02-27T17:46:41.383Z",
-    "duration": 1251.6480000000001,
+    "startTime": "2026-02-27T17:51:26.745Z",
+    "duration": 948.7869999999998,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,
